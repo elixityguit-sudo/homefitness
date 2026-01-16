@@ -6,49 +6,49 @@
 
 @layer base {
   :root {
-    /* Home Fitness - Verde, Branco e Cinza */
-    --background: 0 0% 7%;
+    /* Home Fitness - Preto puro com verde neon */
+    --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 12%;
+    --card: 0 0% 5%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 10%;
+    --popover: 0 0% 5%;
     --popover-foreground: 0 0% 100%;
 
-    /* Verde neon vibrante */
-    --primary: 120 100% 50%;
+    /* Verde neon igual ao logo */
+    --primary: 110 100% 45%;
     --primary-foreground: 0 0% 0%;
 
     /* Verde escuro */
-    --secondary: 120 60% 25%;
+    --secondary: 110 70% 20%;
     --secondary-foreground: 0 0% 100%;
 
     /* Cinza escuro */
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
 
     /* Verde accent */
-    --accent: 120 80% 40%;
+    --accent: 110 90% 35%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 120 100% 50%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 110 100% 45%;
 
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(120, 100%, 50%) 0%, hsl(120, 80%, 35%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(0, 0%, 7%) 0%, hsl(0, 0%, 3%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 14%) 0%, hsl(0, 0%, 10%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(110, 100%, 45%) 0%, hsl(110, 80%, 30%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 0%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 3%) 100%);
     
     /* Shadows */
-    --shadow-neon: 0 0 20px hsl(120, 100%, 50% / 0.4), 0 0 40px hsl(120, 100%, 50% / 0.2);
-    --shadow-card: 0 10px 40px hsl(0, 0%, 0% / 0.5);
+    --shadow-neon: 0 0 20px hsl(110, 100%, 45% / 0.5), 0 0 40px hsl(110, 100%, 45% / 0.3);
+    --shadow-card: 0 10px 40px hsl(0, 0%, 0% / 0.8);
   }
 }
 
