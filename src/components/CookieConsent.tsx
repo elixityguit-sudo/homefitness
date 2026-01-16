@@ -6,10 +6,13 @@ const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Limpar para testar - remover depois
+    // localStorage.removeItem("cookie-consent");
+    
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) {
-      // Mostrar após 1 segundo
-      const timer = setTimeout(() => setIsVisible(true), 1000);
+      // Mostrar após 500ms
+      const timer = setTimeout(() => setIsVisible(true), 500);
       return () => clearTimeout(timer);
     }
   }, []);
