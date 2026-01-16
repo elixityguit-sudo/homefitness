@@ -38,7 +38,7 @@ const Services = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/5585991903147"
+            href="https://wa.me/5585991903147?text=Oi%2C%20quero%20agendar%20uma%20aula"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-primary text-primary-foreground px-8 py-4 rounded-xl font-bold hover:shadow-neon transition-all duration-300"

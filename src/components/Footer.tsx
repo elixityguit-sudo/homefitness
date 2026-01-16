@@ -62,7 +62,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
                 <a 
-                  href="https://wa.me/5585991903147"
+                  href="https://wa.me/5585991903147?text=Oi%2C%20quero%20agendar%20uma%20aula"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -89,7 +89,7 @@ const Footer = () => {
               Entre em contato pelo WhatsApp e agende sua aula experimental gratuita.
             </p>
             <a
-              href="https://wa.me/5585991903147"
+              href="https://wa.me/5585991903147?text=Oi%2C%20quero%20agendar%20uma%20aula"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:shadow-neon transition-all duration-300 w-full text-center"
