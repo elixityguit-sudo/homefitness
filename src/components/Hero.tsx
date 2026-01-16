@@ -67,32 +67,46 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-4 gap-8 mt-16 pt-8 border-t border-border/50 items-center"
+            className="flex flex-wrap gap-8 mt-16 pt-8 border-t border-border/50 items-center"
           >
-            {[
-              { value: "5000+", label: "Alunos ativos" },
-              { value: "100+", label: "Equipamentos" },
-              { value: "6h-21h", label: "Seg a Sáb" },
-            ].map((stat) => (
-              <div key={stat.label}>
+            <div>
+              <p className="font-display text-3xl md:text-4xl text-primary glow-text">
+                5000+
+              </p>
+              <p className="text-muted-foreground text-sm mt-1">
+                Alunos ativos
+              </p>
+            </div>
+            
+            <div className="flex items-center gap-6">
+              <div>
                 <p className="font-display text-3xl md:text-4xl text-primary glow-text">
-                  {stat.value}
+                  100+
                 </p>
                 <p className="text-muted-foreground text-sm mt-1">
-                  {stat.label}
+                  Equipamentos
                 </p>
               </div>
-            ))}
-            
-            {/* Scroll indicator */}
-            <div className="hidden md:flex justify-center">
-              <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/50 flex justify-center pt-2">
-                <motion.div
-                  animate={{ y: [0, 8, 0] }}
-                  transition={{ repeat: Infinity, duration: 1.5 }}
-                  className="w-1.5 h-1.5 rounded-full bg-primary"
-                />
+              
+              {/* Scroll indicator */}
+              <div className="hidden md:flex">
+                <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/50 flex justify-center pt-2">
+                  <motion.div
+                    animate={{ y: [0, 8, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                    className="w-1.5 h-1.5 rounded-full bg-primary"
+                  />
+                </div>
               </div>
+            </div>
+            
+            <div>
+              <p className="font-display text-3xl md:text-4xl text-primary glow-text">
+                6h-21h
+              </p>
+              <p className="text-muted-foreground text-sm mt-1">
+                Seg a Sáb
+              </p>
             </div>
           </motion.div>
         </div>
