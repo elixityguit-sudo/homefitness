@@ -52,7 +52,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="https://wa.me/5585991903147?text=Oi%2C%20quero%20agendar%20uma%20aula"
+              href="https://wa.me/5585991903147?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Gostaria%20de%20verificar%20a%20disponibilidade%20para%20agendar%20uma%20aula."
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 hover:shadow-neon transition-all duration-300"
