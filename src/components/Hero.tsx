@@ -67,7 +67,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/50"
+            className="grid grid-cols-4 gap-8 mt-16 pt-8 border-t border-border/50 items-center"
           >
             {[
               { value: "5000+", label: "Alunos ativos" },
@@ -83,25 +83,21 @@ const Hero = () => {
                 </p>
               </div>
             ))}
+            
+            {/* Scroll indicator */}
+            <div className="hidden md:flex justify-center">
+              <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/50 flex justify-center pt-2">
+                <motion.div
+                  animate={{ y: [0, 8, 0] }}
+                  transition={{ repeat: Infinity, duration: 1.5 }}
+                  className="w-1.5 h-1.5 rounded-full bg-primary"
+                />
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block"
-      >
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/50 flex justify-center pt-2">
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-1.5 h-1.5 rounded-full bg-primary"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 };
