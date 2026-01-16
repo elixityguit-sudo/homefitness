@@ -33,10 +33,12 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="#planos"
+              href="https://wa.me/5585991903147"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-primary text-primary-foreground px-6 py-2.5 rounded-lg font-bold tracking-wide hover:shadow-neon transition-all duration-300"
             >
-              MATRICULE-SE
+              AGENDE UMA AULA
             </a>
           </nav>
 
@@ -71,11 +73,13 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href="#planos"
+                href="https://wa.me/5585991903147"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
                 className="bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-bold text-center mt-2"
               >
-                MATRICULE-SE
+                AGENDE UMA AULA
               </a>
             </nav>
           </motion.div>
