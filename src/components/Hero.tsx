@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-semibold tracking-wide mb-6">
-              🏋️ A MAIOR REDE DE ACADEMIAS
+              🏋️ TREINAMENTO PERSONALIZADO
             </span>
           </motion.div>
 
@@ -29,8 +29,10 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl leading-none mb-6"
           >
-            TRANSFORME SEU
-            <span className="text-gradient block">CORPO E MENTE</span>
+            NÃO PLANEJAMOS
+            <span className="text-gradient block">SEUS TREINOS</span>
+            <span className="block">PLANEJAMOS O SEU</span>
+            <span className="text-gradient block">RESULTADO</span>
           </motion.h1>
 
           <motion.p
@@ -39,8 +41,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground text-lg md:text-xl max-w-xl mb-8"
           >
-            Mais de 100 equipamentos de última geração, aulas coletivas e
-            personal trainers prontos para te ajudar a alcançar seus objetivos.
+            Fazemos dessa a melhor hora do seu dia. 
+            Estamos empenhados em trazer a melhor experiência de treino.
           </motion.p>
 
           <motion.div
@@ -50,18 +52,14 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#planos"
+              href="https://wa.me/5585991903147"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 hover:shadow-neon transition-all duration-300"
             >
-              COMEÇAR AGORA
+              AGENDAR UMA AULA
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <button className="flex items-center justify-center gap-3 px-8 py-4 rounded-lg border border-border hover:border-primary/50 transition-colors">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <Play className="w-5 h-5 text-primary fill-primary" />
-              </div>
-              <span className="font-semibold">Ver tour virtual</span>
-            </button>
           </motion.div>
 
           {/* Stats */}

@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 import logo from "@/assets/logo-home-fitness.png";
 
 const Footer = () => {
@@ -17,7 +17,6 @@ const Footer = () => {
               {[
                 { icon: <Instagram className="w-5 h-5" />, href: "#" },
                 { icon: <Facebook className="w-5 h-5" />, href: "#" },
-                { icon: <Youtube className="w-5 h-5" />, href: "#" },
               ].map((social, i) => (
                 <a
                   key={i}
@@ -34,7 +33,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-xl mb-6">NAVEGAÇÃO</h4>
             <ul className="space-y-3">
-              {["Início", "Planos", "Benefícios", "Estrutura", "Blog"].map((link) => (
+              {["Início", "O que oferecemos", "Contato"].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                     {link}
@@ -50,51 +49,53 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">
-                  Av. Paulista, 1000 - Bela Vista
-                  <br />São Paulo - SP
-                </span>
+                <a 
+                  href="https://goo.gl/maps/cHr1VpV3LKVAkxo38"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Rua Dr Marlio Fernandes, 100A
+                  <br />Fortaleza - CE
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">(11) 99999-9999</span>
+                <a 
+                  href="https://wa.me/5585991903147"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  (85) 99190-3147
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">contato@homefitness.com.br</span>
+                <a 
+                  href="mailto:hfconsultoriaesportiva@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  hfconsultoriaesportiva@gmail.com
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Hours */}
+          {/* CTA */}
           <div>
-            <h4 className="font-display text-xl mb-6">HORÁRIOS</h4>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">Aberto 24 horas</span>
-              </li>
-              <li className="text-muted-foreground text-sm mt-4">
-                <strong className="text-foreground">Recepção:</strong>
-                <br />Seg a Sex: 6h - 22h
-                <br />Sáb e Dom: 8h - 14h
-              </li>
-            </ul>
-
-            {/* Newsletter */}
-            <div className="mt-6">
-              <p className="text-sm mb-3">Receba novidades e promoções:</p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Seu e-mail"
-                  className="flex-1 bg-muted border-none rounded-l-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <button className="bg-primary text-primary-foreground px-4 py-2 rounded-r-lg font-bold text-sm hover:shadow-neon transition-shadow">
-                  ENVIAR
-                </button>
-              </div>
-            </div>
+            <h4 className="font-display text-xl mb-6">AGENDE SEU TREINO</h4>
+            <p className="text-muted-foreground mb-6">
+              Entre em contato pelo WhatsApp e agende sua aula experimental gratuita.
+            </p>
+            <a
+              href="https://wa.me/5585991903147"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-bold hover:shadow-neon transition-all duration-300 w-full text-center"
+            >
+              FALAR NO WHATSAPP
+            </a>
           </div>
         </div>
 

@@ -1,36 +1,31 @@
 import { motion } from "framer-motion";
-import { Dumbbell, Users, Clock, Heart, Wifi, ShieldCheck } from "lucide-react";
+import { Dumbbell, ClipboardCheck, BookOpen, Flame, Swords } from "lucide-react";
 
-const benefits = [
+const services = [
   {
     icon: <Dumbbell className="w-8 h-8" />,
-    title: "Equipamentos Premium",
-    description: "Mais de 100 equipamentos de última geração das melhores marcas do mundo.",
+    title: "Treinamento Personalizado",
+    description: "Treinos desenvolvidos especialmente para você, respeitando seus objetivos e limites.",
   },
   {
-    icon: <Users className="w-8 h-8" />,
-    title: "Aulas Coletivas",
-    description: "Spinning, funcional, yoga, pilates, crossfit e muito mais. +30 modalidades.",
+    icon: <ClipboardCheck className="w-8 h-8" />,
+    title: "Avaliação Física",
+    description: "Avaliação completa para acompanhar sua evolução e ajustar seus treinos.",
   },
   {
-    icon: <Clock className="w-8 h-8" />,
-    title: "Aberto 24 Horas",
-    description: "Treine no seu horário. Acesso liberado todos os dias da semana.",
+    icon: <BookOpen className="w-8 h-8" />,
+    title: "Consultoria de Treino",
+    description: "Orientação profissional para maximizar seus resultados com segurança.",
   },
   {
-    icon: <Heart className="w-8 h-8" />,
-    title: "Personal Trainers",
-    description: "Equipe de profissionais qualificados para te acompanhar em cada etapa.",
+    icon: <Flame className="w-8 h-8" />,
+    title: "AERO",
+    description: "Aulas de aeróbico para queimar calorias e melhorar seu condicionamento.",
   },
   {
-    icon: <Wifi className="w-8 h-8" />,
-    title: "App Exclusivo",
-    description: "Acompanhe seus treinos, evolução e agende aulas pelo nosso aplicativo.",
-  },
-  {
-    icon: <ShieldCheck className="w-8 h-8" />,
-    title: "Ambiente Seguro",
-    description: "Monitoramento 24h, acesso biométrico e protocolos de higienização.",
+    icon: <Swords className="w-8 h-8" />,
+    title: "FIGHT",
+    description: "Aulas de luta para ganhar força, resistência e autoconfiança.",
   },
 ];
 
@@ -44,20 +39,20 @@ const Benefits = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-semibold tracking-wide">POR QUE ESCOLHER</span>
+          <span className="text-primary font-semibold tracking-wide">O QUE OFERECEMOS</span>
           <h2 className="font-display text-4xl md:text-6xl mt-2 mb-4">
-            HOME <span className="text-gradient">FITNESS</span>
+            A MELHOR <span className="text-gradient">EXPERIÊNCIA</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Oferecemos a melhor estrutura e atendimento para você alcançar 
-            seus objetivos de forma rápida e segura.
+            Estamos empenhados em trazer a melhor experiência de treino 
+            para você alcançar seus resultados.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefits.map((benefit, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {services.map((service, index) => (
             <motion.div
-              key={benefit.title}
+              key={service.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -68,15 +63,32 @@ const Benefits = () => {
               
               <div className="relative">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                  {benefit.icon}
+                  {service.icon}
                 </div>
 
-                <h3 className="font-display text-2xl mb-3">{benefit.title}</h3>
-                <p className="text-muted-foreground">{benefit.description}</p>
+                <h3 className="font-display text-2xl mb-3">{service.title}</h3>
+                <p className="text-muted-foreground">{service.description}</p>
               </div>
             </motion.div>
           ))}
         </div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <a
+            href="https://wa.me/5585991903147"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-primary text-primary-foreground px-8 py-4 rounded-xl font-bold hover:shadow-neon transition-all duration-300"
+          >
+            AGENDE JÁ O SEU TREINO
+          </a>
+        </motion.div>
       </div>
     </section>
   );
