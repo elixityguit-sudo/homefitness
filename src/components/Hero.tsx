@@ -72,7 +72,7 @@ const Hero = () => {
             {[
               { value: "5000+", label: "Alunos ativos" },
               { value: "100+", label: "Equipamentos" },
-              { value: "24h", label: "Aberto todos os dias" },
+              { value: "6h-21h", label: "Seg a Sáb" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="font-display text-3xl md:text-4xl text-primary glow-text">
